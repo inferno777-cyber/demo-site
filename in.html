@@ -1,57 +1,48 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html>
-    <body>
-        <input type="number" id="test">
-        <ul id="base"></ul>
-    </body>
-    <script>
-let t=document.createElement("h2");
-let body=document.body;
-t.innerText="How Much I have Money?";
-body.append(t);
-
-let ti=document.createElement("h1")
-ti.innerText="Check Here";
-
-body.append(ti);
-
-function u(){
-    ti.style.color="black";
-    ti.innerText="Check Here";
-}
-ti.addEventListener("mouseover",x);
-ti.addEventListener("mouseout",u);
-
-let test=document.getElementById("test");
-
-let display=document.getElementById("display");
-
-let base=[];
-let ase=document.getElementById("base");
-
-function renderlist(){
-    ase.innerHTML="";
-    base.forEach((money,index)=>{
-        let is=document.createElement("li");
-        is.innerText=money;
-        ase.appendChild(is);
-    });
-}
-
-test.addEventListener("keydown",function(e){
-   if (e.key==="Enter"){
-    base.push(test.value);
-    y=base.reduce((acc,n)=>{
-      return acc+ Number(n);
-    },0);
-    test.value="";
-    renderlist();
-   }
-});
-
-function x() {
-    ti.style.color="red";
-    ti.innerText=y;
-}
-    </script>
-</html>
+    <head>
+        <link rel="stylesheet" href="test.css">
+    </head>
+<body>
+<div class="lgo">
+    <div class="r1">
+   <button class="sale" id="sale">Sale </button>
+    <button class="purchasecon" id="purchase">Purchase</button> 
+    </div>
+    <h1>REPORT <br>GENERATOR</h1>
+    <img src="https://wallpapercave.com/wp/wp4178465.jpg" class="img2" >
+    
+<img src="https://static.vecteezy.com/system/resources/previews/024/249/280/non_2x/ladybug-isolated-on-a-transparent-background-free-png.png" class="ladybug1">
+     <div class="r2">   
+        <button class="transfercon" id="transfer">Transfer</button>
+        <button class="generate" id="generate">Generate</button>
+     </div>
+</div>
+<div class="nav">
+    <h6 id="s1">0</h6>
+    <h6 id="p1">0</h6>
+    <h6 id="t1">0</h6>
+</div>
+    <div class="sys" id="sys">
+     <img src="https://static.vecteezy.com/system/resources/previews/016/892/292/original/coffee-theme-background-with-a-mug-of-coffee-vector.jpg" class="img1">   
+    <div class="report1" id="report1">
+        <h3 > Total Daily Sales</h3>
+        <ul id="re1"></ul>
+        <h4 id="h4">Total Laptop Sales = <span id="an">50000000000000000</span><span>Ks</span></h4>
+        <h4 id="h44">Total Accessories Sales = <span id="a"></span></h4>
+        <h4 id="h444">Total Daily Sales =<span id="ana"></span></h4>
+    </div>
+    <div class="report2" id="report1">
+        <p>Report2</p>
+    </div>
+    <div class="report3" id="report1">
+        <p>Report3</p>
+    </div>
+    <div class="report4" id="report1">
+        <p>Report4</p>
+    </div>
+    
+</div>
+</body>
+<script src="re.js"></script>
+    </html>
