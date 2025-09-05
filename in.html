@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="number" id="test">
+        <ul id="base"></ul>
+    </body>
+    <script>
+let t=document.createElement("h2");
+let body=document.body;
+t.innerText="How Much I have Money?";
+body.append(t);
+
+let ti=document.createElement("h1")
+ti.innerText="Check Here";
+
+body.append(ti);
+
+function u(){
+    ti.style.color="black";
+    ti.innerText="Check Here";
+}
+ti.addEventListener("mouseover",x);
+ti.addEventListener("mouseout",u);
+
+let test=document.getElementById("test");
+
+let display=document.getElementById("display");
+
+let base=[];
+let ase=document.getElementById("base");
+
+function renderlist(){
+    ase.innerHTML="";
+    base.forEach((money,index)=>{
+        let is=document.createElement("li");
+        is.innerText=money;
+        ase.appendChild(is);
+    });
+}
+
+test.addEventListener("keydown",function(e){
+   if (e.key==="Enter"){
+    base.push(test.value);
+    y=base.reduce((acc,n)=>{
+      return acc+ Number(n);
+    },0);
+    test.value="";
+    renderlist();
+   }
+});
+
+function x() {
+    ti.style.color="red";
+    ti.innerText=y;
+}
+    </script>
+</html>
