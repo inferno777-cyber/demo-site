@@ -26,6 +26,7 @@ body{
     padding-top: 10px;
     grid-template-columns: repeat(2,45%);
     margin-left: 1px;
+    overflow:hidden;
 }
 .r1,.r2{
     
@@ -229,4 +230,5 @@ h6{
 }
 .acc{
     width: 150px;
+
 }
